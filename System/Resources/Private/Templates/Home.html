@@ -1,0 +1,16 @@
+<f:layout name="Default" />
+<f:section name="Main"> 
+    <div class="row">
+        <div class="columns small12">
+            <h1>{data.nav_title}</h1>
+            <h2>{data.subtitle}</h2>
+            <form action="index.php?id=38" method="post" name="search">
+                <fieldset>
+                    <input id="autocomplete" type="search" value="" name="tx_bankfinder_map[location]" placeholder="Ort eingeben">
+                    <a href="#" class="reset icnClose show"></a>
+                    <a href="#" class="submit icnSearch" onclick="document.search.submit()"></a>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</f:section>

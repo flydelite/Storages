@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2013-10-28T12:02:47Z" product-name="news" target-language="de">
+    <header/>
+        <body>
+            <trans-unit id="news.more">
+                <source>more</source>
+                <target state="translated">mehr erfahren</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

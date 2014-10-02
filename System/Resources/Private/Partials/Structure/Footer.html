@@ -1,0 +1,24 @@
+<footer>
+    <f:if condition="{data.backend_layout} == 1">
+        <f:then>
+            <nav class="main clear">
+                <f:cObject typoscriptObjectPath="menu.main" />
+            </nav>
+        </f:then>
+        <f:else>
+            <div class="row">
+                <nav class="columns small3">
+                    <h5>Informationen</h5>
+                    <f:cObject typoscriptObjectPath="menu.info" />
+                </nav>
+                <nav class="columns small3 end">
+                    <h5>Über die Website</h5>
+                    <f:cObject typoscriptObjectPath="menu.about" />
+                </nav>
+            </div>
+            <div class="closure">
+                <p>© 2014 Regionalbanken.ch / Powered by Entris Banking AG</p>
+            </div>
+        </f:else>
+    </f:if>
+</footer>

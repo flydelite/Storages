@@ -1,0 +1,59 @@
+<f:layout name="Default" />
+<f:section name="Main"> 
+
+    <!-- INCLUDE BACKGROUNDIMAGE WITH TYPOSCRIPT begin -->
+    <f:cObject typoscriptObjectPath="lib.backgroundImage" />
+    <!-- INCLUDE BACKGROUNDIMAGE WITH TYPOSCRIPT end -->
+    
+    <div class="row">
+        <nav class="sub column small12">
+            
+            <!-- INCLUDE NAVIGATION SECONDLEVEL WITH TYPOSCRIPT begin -->
+            <f:cObject typoscriptObjectPath="menu.secondlevel" />
+            <!-- INCLUDE NAVIGATION SECONDLEVEL WITH TYPOSCRIPT end -->
+            
+        </nav>
+    </div>
+    <section class="content">
+        <div class="row">
+            <div class="columns small8">
+                <div class="mainBox">
+                    <article>
+                        <div class="pageTitle">
+                            <h3>{data.title}</h3>
+                        </div>
+                        
+                        <!-- INCLUDE CONTENT TYPOSCRIPT begin -->
+                        <f:cObject typoscriptObjectPath="lib.content" />
+                        <!-- INCLUDE CONTENT TYPOSCRIPT end -->
+                        
+                    </article>
+                </div>
+            </div>
+            <aside>
+                <div class="columns small4">
+                    
+                    <!-- STATIC TEASER begin -->
+                    <div class="teaser box" style="background-image:url(/Storages/System/Resources/Public/Img/img8.jpg)">
+                        <article>
+                            <h4><a href="index.php?id=50"> Pers&ouml;nliche Beratung gesucht? </a></h4>
+                            <a class="button" href="index.php?id=50"><h5 class="icnMore"> Jetzt kontaktieren </h5></a>
+                        </article>
+                    </div>
+                    <div class="teaser box" style="background-image:url(/Storages/System/Resources/Public/Img/img9.jpg)">
+                        <article>
+                            <h4><a href="index.php?id=38"> Finden Sie die Bank in Ihrer N&auml;he. </a></h4>
+                            <a class="button" href="index.php?id=38"><h5 class="icnMore"> Bank suchen </h5></a>
+                        </article>
+                    </div>
+                    <!-- STATIC TEASER end -->
+                    
+                    <!-- INCLUDE TEASER TYPOSCRIPT begin -->
+                    <f:cObject typoscriptObjectPath="lib.teaser" />
+                    <!-- INCLUDE TEASER TYPOSCRIPT end -->
+                    
+                </div>
+            </aside>
+        </div>
+    </section>
+</f:section>
